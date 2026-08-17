@@ -198,6 +198,15 @@ nav button:hover{
     line-height:1.8;
 }
 
+.zoom-img {
+  width: 400px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.zoom-img:hover {
+  transform: scale(1.5); /* zooms in */
+}
+
 footer{
     background:#5b3a29;
     color:white;
@@ -257,64 +266,6 @@ footer{
 </div>
 
 
-<!-- COASTERS -->
-
-<div class="category">
-
-<h2>Coasters</h2>
-
-<div class="products">
-
-<div class="product">
-<h3>Coaster 1</h3>
-    <img src="images/coaster1.jpeg" alt="coaster1" width="200" height="200">
-<div class="price">₹100</div>
-
-<div class="quantity">
-<button onclick="changeQty('Coaster 1',-1)">−</button>
-<span id="q-Coaster 1">1</span>
-<button onclick="changeQty('Coaster 1',1)">+</button>
-</div>
-
-<button class="add" onclick="add('Coaster 1',100)">
-Add to Cart
-</button>
-</div>
-
-
-<div class="product">
-<h3>Coaster 2</h3>
-<div class="price">₹100</div>
-
-<div class="quantity">
-<button onclick="changeQty('Coaster 2',-1)">−</button>
-<span id="q-Coaster 2">1</span>
-<button onclick="changeQty('Coaster 2',1)">+</button>
-</div>
-
-<button class="add" onclick="add('Coaster 2',100)">
-Add to Cart
-</button>
-</div>
-
-
-<div class="product">
-<h3>Coaster 3</h3>
-<div class="price">₹100</div>
-
-<div class="quantity">
-<button onclick="changeQty('Coaster 3',-1)">−</button>
-<span id="q-Coaster 3">1</span>
-<button onclick="changeQty('Coaster 3',1)">+</button>
-</div>
-
-<button class="add" onclick="add('Coaster 3',100)">
-Add to Cart
-</button>
-</div>
-
-</div>
-</div>
 
 
 <!-- MADHUBANI -->
@@ -326,7 +277,8 @@ Add to Cart
 <div class="products">
 
 <div class="product">
-<h3>Madhubani Art</h3>
+<h3>Madhubani Art - Spaceship</h3>
+<img src="images/spaceship madhubani2.jpeg" alt="Madhubani Spaceship" width="400" height="400" class="zoom-img">
 <div class="price">₹650</div>
 
 <div class="quantity">
@@ -424,6 +376,64 @@ Add to Cart
 </div>
 </div>
 
+<!-- COASTERS -->
+
+<div class="category">
+
+<h2>Coasters</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>Coaster 1</h3>
+<img src="images/coaster1.jpeg" alt="coaster1" width="200" height="200">
+<div class="price">₹100</div>
+
+<div class="quantity">
+<button onclick="changeQty('Coaster 1',-1)">−</button>
+<span id="q-Coaster 1">1</span>
+<button onclick="changeQty('Coaster 1',1)">+</button>
+</div>
+
+<button class="add" onclick="add('Coaster 1',100)">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<h3>Coaster 2</h3>
+<div class="price">₹100</div>
+
+<div class="quantity">
+<button onclick="changeQty('Coaster 2',-1)">−</button>
+<span id="q-Coaster 2">1</span>
+<button onclick="changeQty('Coaster 2',1)">+</button>
+</div>
+
+<button class="add" onclick="add('Coaster 2',100)">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<h3>Coaster 3</h3>
+<div class="price">₹100</div>
+
+<div class="quantity">
+<button onclick="changeQty('Coaster 3',-1)">−</button>
+<span id="q-Coaster 3">1</span>
+<button onclick="changeQty('Coaster 3',1)">+</button>
+</div>
+
+<button class="add" onclick="add('Coaster 3',100)">
+Add to Cart
+</button>
+</div>
+
+</div>
+</div>
 
 <!-- BOOKS -->
 
